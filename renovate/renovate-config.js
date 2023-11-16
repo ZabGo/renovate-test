@@ -1,9 +1,12 @@
 module.exports = {
-  onboarding: false,
+    onboardingConfig: { // This will be placed into repositories without config
+      extends: ["config:base"],
+    },
   platform: 'github',
   includeForks: true,
   dryRun: 'full',
   repositories: ['ZabGo/InsecureShop'],
+  baseBranches: ["main"],
   packageRules: [
   {
       "matchPackagePatterns": [
