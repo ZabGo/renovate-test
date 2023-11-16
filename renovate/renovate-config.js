@@ -8,18 +8,23 @@ module.exports = {
   dryRun: 'full',
   repositories: ['ZabGo/InsecureShop'],
   packageRules: [
-    {
-      description: 'lockFileMaintenance',
-      matchUpdateTypes: [
-        'pin',
-        'digest',
-        'patch',
-        'minor',
-        'major',
-        'lockFileMaintenance',
+  {
+      "matchPackagePatterns": [
+        "androidx.compose.compiler:compiler"
       ],
-      dependencyDashboardApproval: false,
-      stabilityDays: 0,
+      "groupName": "kotlin"
     },
+    {
+      "matchPackagePatterns": [
+        "org.jetbrains.kotlin.*"
+      ],
+      "groupName": "kotlin"
+    },
+    {
+      "matchPackagePatterns": [
+        "com.google.devtools.ksp"
+      ],
+      "groupName": "kotlin"
+    }
   ],
 };
