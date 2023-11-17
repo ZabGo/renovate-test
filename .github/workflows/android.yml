@@ -8,12 +8,21 @@ on:
 
 jobs:
   renovate:
+    name: Renovate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.6.0
-      - name: Self-hosted Renovate
-        uses: renovatebot/github-action@v39.1.1
-        with:
-          configurationFile: renovate/renovate-config.js
-          token: ${{ secrets.RENOVATE_TOKEN }}
+        uses: actions/checkout@master
+      - name: Run Renovate
+        uses: docker://renovate/renovate:19.133-slim
+        env:
+          RENOVATE_REPOSITORIES: ZabGo/InsecureShop
+          RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
+          RENOVATE_AUTOMERGE: true # optional, see below
+
+
+
+
+
+
+
