@@ -14,12 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Run Renovate
-        uses: docker://renovate/renovate:19.133-slim
+        uses: docker://renovate/renovate:37.59-slim
         env:
           RENOVATE_REPOSITORIES: ZabGo/InsecureShop
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
           RENOVATE_AUTOMERGE: true # optional, see below
-
 
 
 
