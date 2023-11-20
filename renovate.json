@@ -1,3 +1,15 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "baseBranches": ["main"],
+  "separateMultipleMajor": true,
+  "packageRules": [
+    {
+      "groupName": "androidx pr update",
+      "matchPackagePatterns": [
+        "androidx.*"
+      ],
+    }
+  ]
+
 }
