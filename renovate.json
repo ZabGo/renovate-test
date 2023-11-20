@@ -4,7 +4,6 @@
   "baseBranches": ["main"],
   "prHourlyLimit": 0,
   "separateMultipleMajor": true,
-  "enabledManagers": ["gradle"],
   "packageRules": [
     {
       "groupName": "androidx pr update",
