@@ -16,7 +16,7 @@ jobs:
       - name: Run Renovate
         uses: docker://renovate/renovate:37.59-slim
         env:
-          RENOVATE_REPOSITORIES: ZabGo/InsecureShop
+          RENOVATE_REPOSITORIES: ZabGo/renovate-test
           RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
           RENOVATE_AUTOMERGE: false # optional, see below
 
