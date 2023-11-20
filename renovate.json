@@ -3,6 +3,7 @@
   "extends": ["config:recommended"],
   "baseBranches": ["main"],
   "separateMultipleMajor": true,
+   "enabledManagers": ["gradle"],
   "packageRules": [
     {
       "groupName": "androidx pr update",
