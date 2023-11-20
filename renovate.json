@@ -6,9 +6,9 @@
   "separateMultipleMajor": true,
   "packageRules": [
     {
-      "groupName": "androidx pr update",
+      "groupName": "androidx dependencies",
       "matchPackageNames": [
-        "androidx"
+        "androidx.+"
       ]
     }
   ]
