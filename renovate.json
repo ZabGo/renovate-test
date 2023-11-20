@@ -2,8 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
   "baseBranches": ["main"],
+  "prHourlyLimit": 0,
   "separateMultipleMajor": true,
-   "enabledManagers": ["gradle"],
+  "enabledManagers": ["gradle"],
   "packageRules": [
     {
       "groupName": "androidx pr update",
