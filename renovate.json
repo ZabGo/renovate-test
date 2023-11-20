@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "groupName": "androidx dependencies",
-      "matchPackageNames": [
+      "matchPackagePatterns": [
         "androidx.+"
       ]
     }
