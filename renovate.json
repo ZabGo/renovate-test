@@ -8,7 +8,7 @@
       "groupName": "androidx pr update",
       "matchPackagePatterns": [
         "androidx.*"
-      ],
+      ]
     }
   ]
 
