@@ -7,8 +7,8 @@
   "packageRules": [
     {
       "groupName": "androidx pr update",
-      "matchPackagePatterns": [
-        "androidx.*"
+      "matchPackageNames": [
+        "androidx"
       ]
     }
   ]
